@@ -32,15 +32,68 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header')
 
+function toggleSkills(){
 
+    // create a variable that store the value of the clicked item
+    let itemClass = this.parentNode.className
+
+    // for each one of the three .skills__content
+    for(i = 0; i < skillsContent.length; i++){
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+
+    // if the content section was closed, make it open
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
+
+skillsHeader.forEach((eL) =>{
+    eL.addEventListener('click', toggleSkills)
+})
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
 
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent=>{
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab=>{
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    })
+})
 
 /*==================== SERVICES MODAL ====================*/
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+
+let swiper = new Swiper('.portfolio__container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    // mousewheel: true,
+    // keyboard: true,
+});
+
 
 
 /*==================== TESTIMONIAL ====================*/
