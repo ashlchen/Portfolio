@@ -351,26 +351,36 @@ img {
   align-items: center;
 }
 /*==================== ABOUT ====================*/
-.about__img{
+/* .about__img{
   width: 200px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
-}
+} */
 
 .about__description{
   text-align: center;
   margin-bottom: var(--mb-2-5);
 }
 
-.about__info{
+/* .about__countdown{
+  display: flex;
+} */
+
+.about__info,
+.about__countdown{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
 
 }
 
-.about__info-title{
+.about__info-title,
+.about__info-days,
+.about__info-hours,
+.about__info-mins,
+.about__info-seconds
+{
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
@@ -381,7 +391,9 @@ img {
 }
 
 .about__info-title,
-.about__info-name{
+.about__info-name,
+.about__countdown-title,
+.about__countdown-data{
   display: block;
 }
 
