@@ -823,6 +823,10 @@ img {
     grid-template-columns: .6fr;
     justify-content: center;
   }
+
+  .footer__copy{
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px){
