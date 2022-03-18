@@ -358,7 +358,8 @@ img {
   align-self: center;
 } */
 
-.about__description{
+.about__description,
+.about__data{
   text-align: center;
   margin-bottom: var(--mb-2-5);
 }
@@ -469,20 +470,62 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html{
+.skills__sql{
   width: 90%;
 }
 
-.skills__css{
+.skills__tableau{
   width: 80%;
 }
 
-.skills__js{
+.skills__powerBI{
+  width: 70%;
+}
+
+.skills__r{
+  width: 80%;
+}
+
+.skills__alteryx{
   width: 60%;
 }
 
-.skills__react{
+.skills__ml{
+  width: 80%;
+}
+
+.skills__datastructure{
+  width: 70%
+}
+
+.skills__analytics{
+  width: 90%;
+}
+
+.skills__html{
   width: 85%;
+}
+
+.skills__php{
+  width: 70%;
+}
+
+.skills__vue{
+  width: 65%;
+}
+
+.skills__aws,
+.skills__mysql,
+.skills__azure{
+  width: 80%;
+}
+
+.skills__docker{
+  width: 70%;
+}
+
+.skills__agile{
+  width: 90%;
 }
 
 .skills__close .skills__list{
