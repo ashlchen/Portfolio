@@ -401,6 +401,7 @@ img {
 .about__buttons{
   display: flex;
   justify-content: center;
+  margin: var(--mb-0-5);
 
 }
 /*==================== SKILLS ====================*/
@@ -495,7 +496,7 @@ img {
 }
 
 .skills__datastructure{
-  width: 70%
+  width: 90%
 }
 
 .skills__analytics{
