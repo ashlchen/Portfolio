@@ -750,32 +750,33 @@
 
                             <div>
                                 <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">ashlchen@iu.edu</span>
+                                <span class="contact__subtitle">hsiaoyuan0902@gmail.com</span>
                             </div>
                         </div>
                     </div>
 
-                    <form mothod="post" name="contact" action="assets/php/form-to-email.php" class="contact__form grid">
+                    <form method="POST" name="contact" action="https://formsubmit.co/hsiaoyuan0902@gmail.com" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" name="name">
+                                <input type="text" class="contact__input" name="name" required>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input" name="email">
+                                <input type="email" class="contact__input" name="email" required>
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
                             <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
                         </div>
-
+                    
+                        <input type="hidden" name="_next" value="https://ashlchen.github.io/Portfolio/thankyou.html">
                         <div> 
-                            <a href="" class="button button--flex" type="submit">
-                                Send Message
+                            <button class="button button--flex" type="submit">
+                                Send Message 
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
