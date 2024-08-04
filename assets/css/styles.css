@@ -472,19 +472,19 @@ img {
 }
 
 .skills__sql{
-  width: 90%;
+  width: 100%;
 }
 
 .skills__tableau{
-  width: 80%;
+  width: 100%;
 }
 
 .skills__powerBI{
-  width: 70%;
+  width: 100%;
 }
 
 .skills__r{
-  width: 80%;
+  width: 75%;
 }
 
 .skills__alteryx{
@@ -492,7 +492,7 @@ img {
 }
 
 .skills__ml{
-  width: 80%;
+  width: 75%;
 }
 
 .skills__datastructure{
@@ -517,7 +517,7 @@ img {
 
 .skills__mysql
 {
-  width: 80%;
+  width:100%;
 }
 
 .skills__docker{
