@@ -144,7 +144,7 @@ const hoursE1 = document.getElementById('hours');
 const minsE1 = document.getElementById('mins');
 const secondsE1  = document.getElementById('seconds');
 
-const Graduation = '16 Dec 2022'
+const Graduation = '16 Dec 2026'
 
 function countdown() {
     const currentDate = new Date();
