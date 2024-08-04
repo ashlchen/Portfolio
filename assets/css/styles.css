@@ -639,6 +639,10 @@ img {
 .qualification__button.qualification__active{
   color: var(--first-color);
 }
+
+.qualification__align{
+  text-align: right;
+}
 /*==================== SERVICES ====================*/
 
 
